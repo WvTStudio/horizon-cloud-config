@@ -1,0 +1,16 @@
+{
+	"packs": [
+		{
+			"uuid": "d6dcb31a-d1b4-4eed-8b03-62769d1edc8f",
+			"package": "https://gitlab.com/zhekasmirnov/horizon-cloud-config/raw/master/innercore/pack.zip",
+			"manifest": "https://gitlab.com/zhekasmirnov/horizon-cloud-config/raw/master/innercore/manifest.json",
+			"graphics": "https://gitlab.com/zhekasmirnov/horizon-cloud-config/raw/master/innercore/graphics.zip",
+			"changelog": {
+				"en": "https://gitlab.com/zhekasmirnov/horizon-cloud-config/raw/master/innercore/changelog.html",
+				"ru": "https://gitlab.com/zhekasmirnov/horizon-cloud-config/raw/master/innercore/changelog-ru.html"
+			}
+		}
+	],
+
+	"suggestions": ["d6dcb31a-d1b4-4eed-8b03-62769d1edc8f"]
+}

@@ -1,0 +1,158 @@
+{
+	"dataLockUUID": "5d1a88f1-e042-4035-916b-872ff1266fa1",
+
+	"isAudioAllowed": false,
+	"maxLoadWaitingTime": 1.25,
+	"desiredHorizonAdDensity": 0.5,
+	"desiredPackAdDensity": 0.3,
+	"desiredPackAdDuration": 20,
+	"desiredAdditionalBannerChance": 0.2,
+
+	"lowerRatingThreshold": 10,
+	"lowerRatingProbabilityFactor": 0,
+
+	"weights": {
+		"banner": 1,
+		"native": 1,
+		"interstitial": 5,
+		"interstitial_video": 6
+	},
+
+	"attempts": {
+		"banner": 3,
+		"native": 3,
+		"interstitial": 2,
+		"interstitial_video": 1
+	},
+
+	"trustedAdDomainChance": 1,
+	"trusted": [
+		{
+			"provider": "ca-app-pub-3152642364854897~5577139781",
+			"units": {
+				"banner": [
+					"ca-app-pub-3152642364854897/9788202751",
+					"ca-app-pub-3152642364854897/2140264136",
+					"ca-app-pub-3152642364854897/8283549399",
+					"ca-app-pub-3152642364854897/9790689295"
+				],
+				"native": [
+					"ca-app-pub-3152642364854897/5696365763",
+					"ca-app-pub-3152642364854897/3225280945",
+					"ca-app-pub-3152642364854897/9599117602",
+					"ca-app-pub-3152642364854897/6874264800"
+				],
+				"interstitial": [
+					"ca-app-pub-3152642364854897/5851444283",
+					"ca-app-pub-3152642364854897/4538362613"
+				],
+				"interstitial_video": [
+					"ca-app-pub-3152642364854897/7340991056"
+				]
+			}
+		},
+
+		{
+			"provider": "ca-app-pub-6874502201951300~7445180251",
+			"units": {
+				"banner": [
+					"ca-app-pub-6874502201951300/3613746455",
+					"ca-app-pub-6874502201951300/6539292694",
+				],
+				"native": [
+					"ca-app-pub-6874502201951300/6156149310",
+					"ca-app-pub-6874502201951300/5584948457"
+				],
+				"interstitial": [
+					"ca-app-pub-6874502201951300/2109093097",
+					"ca-app-pub-6874502201951300/3721557666"
+				],
+				"interstitial_video": []
+			}
+		}
+	],
+
+
+	"distributionModelWeights": {
+		"innercore:pack-dev:pack-main-menu": 80,
+		"innercore:pack-dev:pack-mod-browser": 20,
+		"innercore:pack-main-menu:innercore-dev": 0,
+		"innercore:pack-main-menu:innercore-support-dev": 100,
+		"innercore:pack-mod-browser:innercore-dev": 30,
+		"innercore:pack-mod-browser:innercore-support-dev": 70,
+		"innercore:innercore-dev:self": 100,
+		"innercore:innercore-dev:mods": 0,
+		"innercore:innercore-support-dev:self": 70,
+		"innercore:innercore-support-dev:mods": 30
+	},
+
+	"distributionModelDomains": {
+		"horizon-dev": {
+			"provider": "ca-app-pub-3152642364854897~5577139781",
+			"units": {
+				"banner": [
+					"ca-app-pub-3152642364854897/9788202751",
+					"ca-app-pub-3152642364854897/2140264136",
+					"ca-app-pub-3152642364854897/8283549399",
+					"ca-app-pub-3152642364854897/9790689295"
+				],
+				"native": [
+					"ca-app-pub-3152642364854897/5696365763",
+					"ca-app-pub-3152642364854897/3225280945",
+					"ca-app-pub-3152642364854897/9599117602",
+					"ca-app-pub-3152642364854897/6874264800"
+				],
+				"interstitial": [
+					"ca-app-pub-3152642364854897/5851444283",
+					"ca-app-pub-3152642364854897/4538362613"
+				],
+				"interstitial_video": [
+					"ca-app-pub-3152642364854897/7340991056"
+				]
+			}
+		},
+		"innercore-dev": {
+			"provider": "ca-app-pub-3152642364854897~5577139781",
+			"units": {
+				"banner": [
+					"ca-app-pub-3152642364854897/9788202751",
+					"ca-app-pub-3152642364854897/2140264136",
+					"ca-app-pub-3152642364854897/8283549399",
+					"ca-app-pub-3152642364854897/9790689295"
+				],
+				"native": [
+					"ca-app-pub-3152642364854897/5696365763",
+					"ca-app-pub-3152642364854897/3225280945",
+					"ca-app-pub-3152642364854897/9599117602",
+					"ca-app-pub-3152642364854897/6874264800"
+				],
+				"interstitial": [
+					"ca-app-pub-3152642364854897/5851444283",
+					"ca-app-pub-3152642364854897/4538362613"
+				],
+				"interstitial_video": [
+					"ca-app-pub-3152642364854897/7340991056"
+				]
+			}
+		},
+		"innercore-support-dev": {
+			"provider": "ca-app-pub-6874502201951300~7445180251",
+			"units": {
+				"banner": [
+					"ca-app-pub-6874502201951300/3613746455",
+					"ca-app-pub-6874502201951300/6539292694",
+				],
+				"native": [
+					"ca-app-pub-6874502201951300/6156149310",
+					"ca-app-pub-6874502201951300/5584948457"
+				],
+				"interstitial": [
+					"ca-app-pub-6874502201951300/2109093097",
+					"ca-app-pub-6874502201951300/3721557666"
+				],
+				"interstitial_video": []
+			}
+		}
+	}
+
+}
