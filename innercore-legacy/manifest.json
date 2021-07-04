@@ -1,0 +1,29 @@
+{
+	"game": "Minecraft PE",
+	"gameVersion": "1.11.4",
+	"pack": "Inner Core Legacy",
+	"packVersion": "2.1.0b71",
+	"packVersionCode": 108,
+	"developer": "Horizon Team",
+	"description": {
+		"en": "This is a legacy version, that runs MCBE 1.11.4. Inner Core is a new generation modloader for Minecraft Bedrock Edition, able to run dozens of large mods simultaneously, making them fully compatible. \nIMPORTANT! installation requires at least 500MB of free space. \n\n",
+		"ru": "Это старая версия, основанная на версии Minecraft 1.11.4. Inner Core - загрузчик модов нового поколения для Minecraft Bedrock Edition, позволяющий запускать десятки модов одновременно и обеспечивающий их полную совместимость. \nВНИМАНИЕ! Для установки необходимо минимум 500МБ свободного места на устройстве. \n\n"
+	},
+
+	"directories": [
+		"assets",
+		"so",
+		"java",
+		"native",
+   		"mods"
+	],
+
+	"keepDirectories": [
+		"innercore",
+		"resourcepacks",
+		"worlds"
+	],
+
+ 	"activity": "com.mojang.minecraftpe.MainActivity",
+ 	"environmentClass": "com.zhekasmirnov.mcpe161.EnvironmentSetup"
+}
