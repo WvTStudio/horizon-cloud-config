@@ -1,0 +1,31 @@
+{
+	"game": "Minecraft PE",
+	"gameVersion": "1.16.201",
+	"pack": "Inner Core Test",
+	"packVersion": "2.2.1b101 test",
+	"packVersionCode": 138,
+	"developer": "Horizon Team",
+	"description": {
+		"en": "This is a test version for Inner Core. Right now we are testing update for Minecraft 1.16.201 and it mignt be extremely unstable. Here you will receive more updates, but some of them might break everything.",
+		"ru": "Это тестовая версия Inner Core. На данный момент тут тестируется обновление на версию 1.16.201 и она может быть крайне нестабильна. Здесь будет больше небольших тестовых обновлений, однако многие из них имеют шанс все сломать."
+	},
+
+	"directories": [
+		"assets",
+		"so",
+		"java",
+		"native",
+   		"mods"
+	],
+
+	"keepDirectories": [
+		"innercore",
+		"resourcepacks",
+		"worlds",
+		"modpacks",
+		"modpacks-archive"
+	],
+
+ 	"activity": "com.mojang.minecraftpe.MainActivity",
+ 	"environmentClass": "com.zhekasmirnov.mcpe161.EnvironmentSetup"
+}

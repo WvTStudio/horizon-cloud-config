@@ -1,0 +1,80 @@
+{
+    "packs": [
+        {
+            "changelog": {
+                "en": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore/changelog.html",
+                "ru": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore/changelog-ru.html"
+            },
+            "graphics": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore/graphics.zip",
+            "manifest": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore/manifest.json",
+            "package": {
+                "part0001": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore/part0001",
+                "part0002": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore/part0002",
+                "part0003": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore/part0003",
+                "part0004": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore/part0004",
+                "part0005": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore/part0005",
+                "part0006": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore/part0006",
+                "part0007": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore/part0007",
+                "part0008": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore/part0008",
+                "part0009": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore/part0009",
+                "part0010": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore/part0010",
+                "part0011": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore/part0011",
+                "part0012": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore/part0012",
+                "part0013": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore/part0013",
+                "part0014": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore/part0014",
+                "part0015": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore/part0015"
+            },
+            "uuid": "d6dcb31a-d1b4-4eed-8b03-62769d1edc8f"
+        },
+        {
+            "changelog": {
+                "en": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore-test/changelog.html",
+                "ru": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore-test/changelog-ru.html"
+            },
+            "graphics": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore-test/graphics.zip",
+            "manifest": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore-test/manifest.json",
+            "package": {
+                "part0001": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore-test/part0001",
+                "part0002": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore-test/part0002",
+                "part0003": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore-test/part0003",
+                "part0004": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore-test/part0004",
+                "part0005": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore-test/part0005",
+                "part0006": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore-test/part0006",
+                "part0007": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore-test/part0007",
+                "part0008": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore-test/part0008",
+                "part0009": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore-test/part0009",
+                "part0010": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore-test/part0010",
+                "part0011": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore-test/part0011",
+                "part0012": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore-test/part0012",
+                "part0013": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore-test/part0013",
+                "part0014": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore-test/part0014",
+                "part0015": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore-test/part0015"
+            },
+            "uuid": "8088852f-5295-4f54-a366-a28a87cdb62b"
+        },
+        {
+            "changelog": {
+                "en": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore-legacy/changelog.html",
+                "ru": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore-legacy/changelog-ru.html"
+            },
+            "graphics": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore-legacy/graphics.zip",
+            "manifest": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore-legacy/manifest.json",
+            "package": {
+                "part0001": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore-legacy/part0001",
+                "part0002": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore-legacy/part0002",
+                "part0003": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore-legacy/part0003",
+                "part0004": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore-legacy/part0004",
+                "part0005": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore-legacy/part0005",
+                "part0006": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore-legacy/part0006",
+                "part0007": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore-legacy/part0007",
+                "part0008": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore-legacy/part0008",
+                "part0009": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore-legacy/part0009",
+                "part0010": "https://cdn.jsdelivr.net/gh/WvTStudio/horizon-cloud-config@master/innercore-legacy/part0010"
+            },
+            "uuid": "d34d7a02-6bf7-4e8e-99c3-19eb502d6256"
+        }
+    ],
+    "suggestions": [
+        "d6dcb31a-d1b4-4eed-8b03-62769d1edc8f"
+    ]
+}

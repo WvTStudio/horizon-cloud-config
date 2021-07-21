@@ -1,0 +1,144 @@
+<b>Changelog</b>
+
+<b>2.1.0b71</b>
+<b><font color='#009900'>Added experimental modded multiplayer</font></b>. Players with same mods are now allowed to connect to each other via LAN or through Xbox. This feature is experimental, may contain bugs and could be unstable, but it is already tested and debugged to be playable. <i>Please notice, that all mods must be same (and same versions) to play with each other, otherwise it will kick you and may cause crash, while connecting</i>.
+
+<b><font color='#990000'>All mods need to be rewritten and adapted for multiplayer by their developers</font></b>, mods, with multiplayer support will be marked in mod browser as <font color='#1B3BDB'>[Multiplayer]</font>. You can play in multiplayer with not adapted mods, but it will show warning and most likely will cause mod malfunction and maybe even crash.
+
+You are now able to login into Xbox to play not only on same WiFi, but via Xbox friends from any place. <i>If you have encountered some problems with logging in or playing online, you can always open FAQ in login dialog</i>.
+
+<u>Massive API updates:</u>
+- Network module and some other network-related classes
+- Added classes BlockSource to access certain dimension and PlayerActor for certain player
+- Added class ItemContainer - container via multiplayer support
+- Added ability to access and modify NBT of mods, vanilla TileEntity and items
+- New ItemModel caching system with grouping and better caching algorithm
+- Added collision block model mapping, same as render model
+- Added item model override function, same as icon override
+- Model and icon override functions now receiving ItemExtraData
+- Many callbacks got new parameters (mostly BlockSource and player)
+- Alot of other changes.
+
+<b>2.0.5b43</b>
+- Optimized mod UI, making it a bit faster and consume less RAM
+- Added new mode for standard window, making all contents appear in separate window instead of background one. To use it in a new mode, use UI.StandardWindow instead of misspelled UI.StandartWindow
+- Custom dimension generator got heavy optimizations by decreasing noise level of detail. However, custom level of detail now can be set to individual noise generators. 
+- Resource and behavior packs are now injected inside each world upon enter
+- Added TagRegistry module. Docs will be available after some tests and maybe rework.
+- Callback.addCallback now has third optional parameter - priority (integer, default value is 0). Callbacks with higher priority will be called earlier
+- UI slots now support animated background (texture name array must be passed instead of single name). For other textures in UI this feature was already present.
+- UI slots now has text parameter, also container.setText work on them. If this parameter is not null, it value will be shown instead of count
+- Deprecated slot element parameters isTransparentBackground and needClean, now slot supports transparent background by default
+- ItemModel got new methods, that can set custom bitmap as icon in mod ui
+- Added particle type properties framesX and framesY, which define frame grid size.
+- Added particle type property rebuildDelay, which defines time in ticks between particle mesh updates
+- Added particle type properties color2 and animators.color, which allow animation of particle color
+- Added Updatable.addAnimator(updatable_object), which adds updatable, that ticks on client thread and never saves
+- Animations (static models) are now cleaned up on dimension change
+- Animations are now garbage collected after they are destroyed in world
+- Added DimensionLoaded(currentId, lastId) and DimensionUnloaded(unloadedId) callbacks
+- RenderMesh now can receive not only absolute file path, but also resource path and name of file in models/ dir in resources.
+- Added container method setOnOpenListener(function(container, window) {...})
+- Removed shared objects, built for x86 ABI to reduce overall weight
+- World.clip now works on actors, but only on certain mode parameter values.
+- Fixed block icon generation for ICRender models.
+- Fixed error, that occurred after second WRAP_JAVA call on same class
+- Fixed slabs drop
+- Fixed some textures in ui
+
+<b>2.0.4b36</b>
+- Inner Core preferences menu was majorly improved and new settings were added
+- Fixed critical error, that could cause server thread to stop
+- Fixed OutOfMemory crashes, that could occur during startup
+- Alot of minor fixes from GP statistics
+- After installing mod you can now install all its dependencies 
+- Saving system improved: overall stability increased, saves backup is created and all saves errors, if occured, are now displayed in one window instead of one window per error
+- Main menu is slightly redesigned
+- Added function Entity.getAllInsideBox(coords1, coords2[, type, flag])
+- Added function Entity.getDimension(entity)
+- Added function Item.setAllowedInOffhand(id, allowed)
+- Added function Game.simulateBackPressed()
+- PathNavigation is majorly fixed and improved
+- Fixed Entity.setCarriedItem/setOffhandItem/setArmor were not sending data to client on non-player entities
+- Fixed some crashes, that could occur while transferring between dimensions
+- Fixed rotation of animations
+- Fixed error, that caused mod behavior packs to be ignored on first launch
+- Fixed duplication mod behavior packs in world folder
+- Fixed Entity.spawn was working incorrectly with addon entities
+- Fixed Translation module doing English to English translations
+- Increased item name caching capacity
+- Fixed window method setTouchable not working for game overlays
+- Other minor stability-related fixes
+
+<b>2.0.3b32</b>
+- Fixed vanilla particles and mod models with blending drawing behing alpha-tested blocks and clouds
+
+<b>2.0.3b31</b>
+- Minor fixes, including custom dimensions and block meshes in hand render
+
+<b>2.0.3b30 beta</b>
+<u>Main changes:</u>
+- Added ability to create custom item and models in UI and hand via module ItemModel
+- Added ability to add custom materials and shaders
+- Added new animation mode - direct mesh render with material, to enter this mode call method describe({mesh: RenderMesh, skin: "texture name", material: "material name"})
+- Blocks with ICRender will automatically gain inventory models
+- Item animations now based on RenderMesh and support custom item models and materials
+- Block rendertypes in UI support
+- Massive refactor for all item model related code
+- Added new loading stage - item model generation, it is now happening separately from mod loading
+- Added options disable_loading_screen and performace.server_thread_priority to Inner Core config
+- Global optimizations
+<u>Other changes:</u>
+- Better TileEntity system: now unloaded TileEntities, or ones without tick function will not be counted, when checking updatable limit. Added TileEntity functions load(), unload() and onCheckerTick(isInitialized, isLoaded, wasLoaded)
+- Added functions to World module: clip(x1, y1, z1, x2, y2, z2, mode), doesVanillaTileHasUI(id), setBlockUpdateAllowed(true, false), setBlockUpdateType(type), getRelativeCoords(x, y, z, side), getVectorByBlockSide(side), getInverseBlockSide(side)
+- Added Block.registerNeighbourChangeFunction[ForID](id, function(coords, block, changeCoords){})
+- Added Block.registerEntityInsideFunction[ForID](id, function(coords, block, entity){})
+- Added Block.registerEntityStepOnFunction[ForID](id, function(coords, block, entity){})
+- Added functions Block.setupAsRedstoneReceiver(nameID, connectToRedstone), Block.setupAsRedstoneEmitter(nameID, connectToRedstone, Block.setupAsNonRedstoneTile(nameID)
+- Added block description property - mapcolor, sets 0xRRGGBB map color to block
+- Added block description property - sound, sets one of standard block sound types
+- Added RenderMesh methods rotate(x, y, z, rx, ry, rz), fitIn(x1, y1, z1, x2, y2, z2[, keepRatio]), clone()
+- Added RenderMesh method setLightPos(x, y, z) - set relative position for block lighting
+- Added methods to RenderMesh - setNoTint(), setGrassTinted(), setFoliageTinted(leavesData), setWaterTinted()
+- Added RenderMesh method addMesh(mesh[, x, y, z[, scaleX, scaleY, scaleZ]]), alpha value now can be passed to setColor
+- Added condition ICRender.RANDOM(value, max[, seed]) - for given block position generates random number from 0 to max - 1, and returns, if it is equal to value. Has method setAxisEnabled(0-2, enabled) to ignore some axises.
+- Added preloader scipt methods - Resources.getAllMatchingResources("regex"), Resources.getResourcePath("local path"), Resources.getAllResourceDirectoriesPaths()
+<u>Fixes:</u>
+- Fixed issue with spending items when tapping on block with UI
+- Fixed crash with mob custom models
+- Fixed some crashes from item models
+- Fixed crash from massive amount of blocks with RenderMesh
+- Fixed functions for player experience work
+- Fixed meshes after app was minimized 
+
+<b>2.0.2b19 beta</b>
+- Hotfix for launch crash in 2.0.1b18 on some devices (glGetString)
+
+<b>2.0.1b18 beta</b>
+- Added mod loading UI
+- Added directories innercore/resource_packs, innercore/behaviour_packs for adding resource and behaviour packs
+- Local world resource and behaviour packs are now automatically forced for this world
+- Added complete API for custom biomes
+- Added API to generate custom biome maps for any dimension
+- Added module AddonEntityRegistry and functions to work with addon-added mobs
+- Added better API for new custom dimensions
+- Added machine place sound
+- Fixed UI hangs after fast-clicking on block or item with UI
+- Fixed drops from World.destroyBlock
+- Fixed Player.setHunger, Player.setSaturation, Player.setExhaustion
+- Fixed empty and non ASCII base item name crash (Mods like Divine RPG)
+- Now when all mods are stopped in case of an fatal error it is displayed as tip message
+- Other minor fixes
+
+<b>2.0.1b9 beta</b>
+- Performance and stability improvements
+- Fixed and updated mods and workbench UI to classic style (for standard windows)
+- Mod UI will close, if back button is pressed or app is minimized
+- Fixes for various crashes, caused by API methods
+- When fatal error occurres because of some mod, appropriate tip message will be shown
+
+<b>2.0.0b2 beta</b>
+- Minor fixes before release
+
+<b>2.0.0 beta</b>
+- First version released

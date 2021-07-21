@@ -1,0 +1,31 @@
+{
+	"game": "Minecraft PE",
+	"gameVersion": "1.16.201",
+	"pack": "Inner Core",
+	"packVersion": "2.2.1b101",
+	"packVersionCode": 138,
+	"developer": "Horizon Team",
+	"description": {
+		"en": "Inner Core is a new generation modloader for Minecraft Bedrock Edition, able to run dozens of large mods simultaneously, making them fully compatible. \nIMPORTANT! installation requires at least 500MB of free space. \n\n",
+		"ru": "Inner Core - загрузчик модов нового поколения для Minecraft Bedrock Edition, позволяющий запускать десятки модов одновременно и обеспечивающий их полную совместимость. \nВНИМАНИЕ! Для установки необходимо минимум 500МБ свободного места на устройстве. \n\n"
+	},
+
+	"directories": [
+		"assets",
+		"so",
+		"java",
+		"native",
+   		"mods"
+	],
+
+	"keepDirectories": [
+		"innercore",
+		"resourcepacks",
+		"worlds",
+		"modpacks",
+		"modpacks-archive"
+	],
+
+ 	"activity": "com.mojang.minecraftpe.MainActivity",
+ 	"environmentClass": "com.zhekasmirnov.mcpe161.EnvironmentSetup"
+}
